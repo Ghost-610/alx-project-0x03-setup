@@ -7,7 +7,8 @@ interface PageRouteProps {
   pageRoute: string
 }
 
-const Home: React.FC = () => {
+export default function Home() {
+  // Using Next.js useRouter hook for navigation
   const router = useRouter()
 
   // Imeperative routing with useRouter
@@ -35,4 +36,3 @@ const Home: React.FC = () => {
     </div>
   );
 }
-export default Home;
