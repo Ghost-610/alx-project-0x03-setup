@@ -9,7 +9,7 @@ interface PageRouteProps {
 
 export default function Home() {
   // Using Next.js useRouter hook for navigation
-  const router = useRouter()
+const router = useRouter();
 
   // Imeperative routing with useRouter
   const routeToNextPage  = ({ pageRoute }: PageRouteProps) => {
