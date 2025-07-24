@@ -7,7 +7,7 @@ interface PageRouteProps {
   pageRoute: string
 }
 
-export default function Home() {
+const Home: React.FC = () => {
   const router = useRouter()
 
   // Imeperative routing with useRouter
@@ -35,3 +35,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home;
