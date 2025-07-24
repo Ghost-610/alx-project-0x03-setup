@@ -1,11 +1,10 @@
 
 import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
+import { PageRouteProps } from "@/interface";
 
 
-interface PageRouteProps {
-  pageRoute: string
-}
+
 
 export default function Home() {
   // Using Next.js useRouter hook for navigation
@@ -17,6 +16,7 @@ const router = useRouter();
   }
 
   return (
+    
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center">
       {/* Welcome Message */}
       <h1 className="text-4xl font-bold text-gray-800 mb-4">
